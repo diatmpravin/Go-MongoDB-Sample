@@ -6,6 +6,10 @@ import (
 	"labix.org/v2/mgo/bson"
 )
 
+var (
+	db *mgo.Session
+)
+
 type User struct{
 	Name string
 	Email string
@@ -24,7 +28,7 @@ func setupDB() *mgo.Session {
 	return db
 }
 
-func insertData(db *mgo.Session) {
+func insertData() {
 	coll := db.DB("Pravin").C("User")
 	fmt.Println("Collection:", coll)
 
@@ -32,7 +36,7 @@ func insertData(db *mgo.Session) {
 	PanicIf(err)
 }
 
-func getData(db *mgo.Session) {
+func getData() {
 	coll := db.DB("Pravin").C("User")
 	fmt.Println("Collection data:", coll)
 
@@ -44,9 +48,9 @@ func getData(db *mgo.Session) {
 }
 
 func main() {
-	db := setupDB()
+	db = setupDB()
 	fmt.Println("Db: ", db)
 
-	insertData(db)
-	getData(db)
+	insertData()
+	getData()
 }

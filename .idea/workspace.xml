@@ -26,8 +26,8 @@
       <file leaf-file-name="mongo.go" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mongo.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54924875" vertical-offset="181" max-vertical-offset="870">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state vertical-scroll-proportion="1.0751252" vertical-offset="106" max-vertical-offset="930">
+              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -277,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mongo.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54924875" vertical-offset="181" max-vertical-offset="870">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state vertical-scroll-proportion="1.0751252" vertical-offset="106" max-vertical-offset="930">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
           <folding />
         </state>
       </provider>
