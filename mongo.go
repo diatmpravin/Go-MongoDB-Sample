@@ -32,7 +32,7 @@ func insertData(db *mgo.Session) {
 	PanicIf(err)
 }
 
-func getDate(db *mgo.Session) {
+func getData(db *mgo.Session) {
 	coll := db.DB("Pravin").C("User")
 	fmt.Println("Collection data:", coll)
 
@@ -48,5 +48,5 @@ func main() {
 	fmt.Println("Db: ", db)
 
 	insertData(db)
-	getDate(db)
+	getData(db)
 }
