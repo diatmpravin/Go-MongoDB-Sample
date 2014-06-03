@@ -25,19 +25,19 @@ func setupDB() *mgo.Session {
 }
 
 func insertData(db *mgo.Session) {
-	table := db.DB("Pravin").C("User")
-	fmt.Println("Table:", table)
+	coll := db.DB("Pravin").C("User")
+	fmt.Println("Collection:", coll)
 
-	err := table.Insert(&User{"Pravin", "pravinmishra88@gmail.com", "Hey, how are you?"})
+	err := coll.Insert(&User{"Pravin", "pravinmishra88@gmail.com", "Hey, how are you?"})
 	PanicIf(err)
 }
 
 func getDate(db *mgo.Session) {
-	table := db.DB("Pravin").C("User")
-	fmt.Println("Table:", table)
+	coll := db.DB("Pravin").C("User")
+	fmt.Println("Collection data:", coll)
 
 	users := []User{}
-	err := table.Find(bson.M{}).All(&users)
+	err := coll.Find(bson.M{}).All(&users)
 	PanicIf(err)
 
 	fmt.Println("All users: ",users)
